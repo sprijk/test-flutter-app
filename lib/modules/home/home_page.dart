@@ -45,7 +45,7 @@ class _HomePageState extends TbContextState<HomePage>
         elevation: dashboardState ? 0 : 8,
         title: Center(
           child: Container(
-            height: 55,
+            height: 70,
             child: SvgPicture.asset(ThingsboardImage.starSensorsWithTitle,
                 colorFilter: ColorFilter.mode(
                     Theme.of(context).primaryColor, BlendMode.srcIn),

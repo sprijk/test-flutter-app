@@ -186,13 +186,13 @@ class _DashboardGridCardState extends TbContextState<DashboardGridCard> {
                       child: AutoSizeText(
                     widget.dashboard.title,
                     textAlign: TextAlign.center,
-                    maxLines: 1,
-                    minFontSize: 12,
+                    maxLines: 2,
+                    minFontSize: 16,
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
                         fontWeight: FontWeight.w500,
-                        fontSize: 14,
-                        height: 20 / 14),
+                        fontSize: 16,
+                        height: 20 / 16),
                   ))),
             )
           ],
