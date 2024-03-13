@@ -1,26 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:thingsboard_app/utils/transition/page_transitions.dart';
 
-const int _tbPrimaryColorValue = 0xFF305680;
-const Color _tbPrimaryColor = Color(_tbPrimaryColorValue);
-const Color _tbSecondaryColor = Color(0xFF527dad);
-const Color _tbDarkPrimaryColor = Color(0xFF9fa8da);
+const int _ssPrimaryColorValue = 0xFF1d3545;
+const int _ssSecondaryColorValue = 0xFF3e6385;
+
+const Color _ssPrimaryColor = Color(_ssPrimaryColorValue);
+const Color _ssSecondaryColor = Color(_ssSecondaryColorValue);
+
+// const int _tbPrimaryColorValue = 0xFF305680;
+// const Color _tbPrimaryColor = Color(_tbPrimaryColorValue);
+// const Color _tbSecondaryColor = Color(0xFF527dad);
+// const Color _tbDarkPrimaryColor = Color(0xFF9fa8da);
 
 const int _tbTextColorValue = 0xFF282828;
 const Color _tbTextColor = Color(_tbTextColorValue);
-
 var tbTypography = Typography.material2018();
 
 const tbMatIndigo = MaterialColor(
-  _tbPrimaryColorValue,
+  _ssPrimaryColorValue,
   <int, Color>{
     50: Color(0xFFE8EAF6),
     100: Color(0xFFC5CAE9),
     200: Color(0xFF9FA8DA),
     300: Color(0xFF7986CB),
     400: Color(0xFF5C6BC0),
-    500: _tbPrimaryColor,
-    600: _tbSecondaryColor,
+    500: _ssPrimaryColor,
+    600: _ssSecondaryColor,
     700: Color(0xFF303F9F),
     800: Color(0xFF283593),
     900: Color(0xFF1A237E),
@@ -28,17 +33,17 @@ const tbMatIndigo = MaterialColor(
 );
 
 const tbDarkMatIndigo = MaterialColor(
-  _tbPrimaryColorValue,
+  _ssPrimaryColorValue,
   <int, Color>{
     50: Color(0xFFE8EAF6),
     100: Color(0xFFC5CAE9),
     200: Color(0xFF9FA8DA),
     300: Color(0xFF7986CB),
     400: Color(0xFF5C6BC0),
-    500: _tbDarkPrimaryColor,
-    600: _tbSecondaryColor,
+    500: _ssPrimaryColor,
+    600: _ssSecondaryColor,
     700: Color(0xFF303F9F),
-    800: _tbPrimaryColor,
+    800: _ssPrimaryColor,
     900: Color(0xFF1A237E),
   },
 );
@@ -46,7 +51,7 @@ const tbDarkMatIndigo = MaterialColor(
 final ThemeData theme = ThemeData(primarySwatch: tbMatIndigo);
 
 ThemeData tbTheme = ThemeData(
-    useMaterial3: false,
+    useMaterial3: true,
     primarySwatch: tbMatIndigo,
     colorScheme: theme.colorScheme
         .copyWith(primary: tbMatIndigo, secondary: Colors.deepOrange),
@@ -56,7 +61,7 @@ ThemeData tbTheme = ThemeData(
     typography: tbTypography,
     appBarTheme: AppBarTheme(
         backgroundColor: Colors.white,
-        foregroundColor: _tbTextColor,
+        foregroundColor: Colors.white,
         /* titleTextStyle: TextStyle(
           color: _tbTextColor
       ),
@@ -66,8 +71,8 @@ ThemeData tbTheme = ThemeData(
         iconTheme: IconThemeData(color: _tbTextColor)),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
         backgroundColor: Colors.white,
-        selectedItemColor: _tbPrimaryColor,
-        unselectedItemColor: _tbPrimaryColor.withAlpha((255 * 0.38).ceil()),
+        selectedItemColor: _ssPrimaryColor,
+        unselectedItemColor: _ssPrimaryColor.withAlpha((255 * 0.38).ceil()),
         showSelectedLabels: true,
         showUnselectedLabels: true),
     pageTransitionsTheme: PageTransitionsTheme(builders: {

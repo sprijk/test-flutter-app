@@ -71,7 +71,7 @@ class _LoginPageState extends TbPageState<LoginPage> {
                             children: [
                               Row(children: [
                                 SvgPicture.asset(
-                                    ThingsboardImage.thingsBoardWithTitle,
+                                    ThingsboardImage.starSensorsWithTitle,
                                     height: 25,
                                     colorFilter: ColorFilter.mode(
                                         Theme.of(context).primaryColor,
