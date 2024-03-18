@@ -46,7 +46,7 @@ class _HomePageState extends TbContextState<HomePage>
         title: Center(
           child: Container(
             height: 70,
-            child: SvgPicture.asset(ThingsboardImage.starSensorsWithTitle,
+            child: SvgPicture.asset(ThingsboardImage.starSensorsLogoTitleOnly,
                 colorFilter: ColorFilter.mode(
                     Theme.of(context).primaryColor, BlendMode.srcIn),
                 semanticsLabel: 'StarSensors Logo'),

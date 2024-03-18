@@ -1,5 +1,6 @@
 abstract class ThingsboardImage {
   static final starSensorsWithTitle = 'assets/images/ss-black-logo.svg';
+  static final starSensorsLogoTitleOnly = 'assets/images/ss-logo-title.svg';
   static final starSensorsLogoOnly = 'assets/images/ss-logo-only.svg';
   static final thingsboard = 'assets/images/thingsboard.svg';
   static final thingsboardOuter = 'assets/images/thingsboard_outer.svg';
