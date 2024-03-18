@@ -51,29 +51,30 @@ const tbDarkMatIndigo = MaterialColor(
 final ThemeData theme = ThemeData(primarySwatch: tbMatIndigo);
 
 ThemeData tbTheme = ThemeData(
-    useMaterial3: true,
-    primarySwatch: tbMatIndigo,
-    colorScheme: theme.colorScheme
-        .copyWith(primary: tbMatIndigo, secondary: Colors.deepOrange),
-    scaffoldBackgroundColor: Color(0xFFFAFAFA),
-    textTheme: tbTypography.black,
-    primaryTextTheme: tbTypography.black,
-    typography: tbTypography,
-    appBarTheme: AppBarTheme(
+  useMaterial3: true,
+  primarySwatch: tbMatIndigo,
+  colorScheme: theme.colorScheme
+      .copyWith(primary: tbMatIndigo, secondary: Colors.deepOrange),
+  scaffoldBackgroundColor: Color(0xFFFAFAFA),
+  textTheme: tbTypography.black,
+  primaryTextTheme: tbTypography.black,
+  typography: tbTypography,
+  appBarTheme: AppBarTheme(
+    backgroundColor: Colors.white,
+    foregroundColor: Colors.white,
+    iconTheme: IconThemeData(color: _tbTextColor),
+  ),
+  bottomNavigationBarTheme: BottomNavigationBarThemeData(
       backgroundColor: Colors.white,
-      foregroundColor: Colors.white,
-      iconTheme: IconThemeData(color: _tbTextColor),
-    ),
-    bottomNavigationBarTheme: BottomNavigationBarThemeData(
-        backgroundColor: Colors.white,
-        selectedItemColor: _ssPrimaryColor,
-        unselectedItemColor: _ssPrimaryColor.withAlpha((255 * 0.38).ceil()),
-        showSelectedLabels: true,
-        showUnselectedLabels: true),
-    pageTransitionsTheme: PageTransitionsTheme(builders: {
-      TargetPlatform.iOS: FadeOpenPageTransitionsBuilder(),
-      TargetPlatform.android: FadeOpenPageTransitionsBuilder(),
-    }));
+      selectedItemColor: _ssPrimaryColor,
+      unselectedItemColor: _ssPrimaryColor.withAlpha((255 * 0.38).ceil()),
+      showSelectedLabels: true,
+      showUnselectedLabels: true),
+  pageTransitionsTheme: PageTransitionsTheme(builders: {
+    TargetPlatform.iOS: FadeOpenPageTransitionsBuilder(),
+    TargetPlatform.android: FadeOpenPageTransitionsBuilder(),
+  }),
+);
 
 final ThemeData darkTheme =
     ThemeData(primarySwatch: tbDarkMatIndigo, brightness: Brightness.dark);

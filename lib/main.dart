@@ -148,50 +148,52 @@ class ThingsboardAppState extends State<ThingsboardApp>
         statusBarColor: Colors.white,
         systemNavigationBarIconBrightness: Brightness.light));
     return MaterialApp(
-        localizationsDelegates: [
-          S.delegate,
-          GlobalMaterialLocalizations.delegate,
-          GlobalWidgetsLocalizations.delegate,
-          GlobalCupertinoLocalizations.delegate,
-        ],
-        supportedLocales: S.delegate.supportedLocales,
-        onGenerateTitle: (BuildContext context) => S.of(context).appTitle,
-        themeMode: ThemeMode.light,
-        home: TwoPageView(
-            controller: _mainPageViewController,
-            first: MaterialApp(
-              key: mainAppKey,
-              scaffoldMessengerKey: appRouter.tbContext.messengerKey,
-              localizationsDelegates: [
-                S.delegate,
-                GlobalMaterialLocalizations.delegate,
-                GlobalWidgetsLocalizations.delegate,
-                GlobalCupertinoLocalizations.delegate,
-              ],
-              supportedLocales: S.delegate.supportedLocales,
-              onGenerateTitle: (BuildContext context) => S.of(context).appTitle,
-              theme: tbTheme,
-              themeMode: ThemeMode.light,
-              darkTheme: tbDarkTheme,
-              onGenerateRoute: appRouter.router.generator,
-              navigatorObservers: [appRouter.tbContext.routeObserver],
-            ),
-            second: MaterialApp(
-              key: dashboardKey,
-              // scaffoldMessengerKey: appRouter.tbContext.messengerKey,
-              localizationsDelegates: [
-                S.delegate,
-                GlobalMaterialLocalizations.delegate,
-                GlobalWidgetsLocalizations.delegate,
-                GlobalCupertinoLocalizations.delegate,
-              ],
-              supportedLocales: S.delegate.supportedLocales,
-              onGenerateTitle: (BuildContext context) => S.of(context).appTitle,
-              theme: tbTheme,
-              themeMode: ThemeMode.light,
-              darkTheme: tbDarkTheme,
-              home: MainDashboardPage(appRouter.tbContext,
-                  controller: _mainDashboardPageController),
-            )));
+      localizationsDelegates: [
+        S.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: S.delegate.supportedLocales,
+      onGenerateTitle: (BuildContext context) => S.of(context).appTitle,
+      themeMode: ThemeMode.light,
+      home: TwoPageView(
+        controller: _mainPageViewController,
+        first: MaterialApp(
+          key: mainAppKey,
+          scaffoldMessengerKey: appRouter.tbContext.messengerKey,
+          localizationsDelegates: [
+            S.delegate,
+            GlobalMaterialLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+          ],
+          supportedLocales: S.delegate.supportedLocales,
+          onGenerateTitle: (BuildContext context) => S.of(context).appTitle,
+          theme: tbTheme,
+          themeMode: ThemeMode.light,
+          darkTheme: tbDarkTheme,
+          onGenerateRoute: appRouter.router.generator,
+          navigatorObservers: [appRouter.tbContext.routeObserver],
+        ),
+        second: MaterialApp(
+          key: dashboardKey,
+          // scaffoldMessengerKey: appRouter.tbContext.messengerKey,
+          localizationsDelegates: [
+            S.delegate,
+            GlobalMaterialLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+          ],
+          supportedLocales: S.delegate.supportedLocales,
+          onGenerateTitle: (BuildContext context) => S.of(context).appTitle,
+          theme: tbTheme,
+          themeMode: ThemeMode.light,
+          darkTheme: tbDarkTheme,
+          home: MainDashboardPage(appRouter.tbContext,
+              controller: _mainDashboardPageController),
+        ),
+      ),
+    );
   }
 }
