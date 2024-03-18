@@ -6,6 +6,6 @@
     <item>
         <bitmap
             android:gravity="center"
-            android:src="@mipmap/thingsboard" />
+            android:src="@mipmap/ss_logo_only" />
     </item>
 </layer-list>

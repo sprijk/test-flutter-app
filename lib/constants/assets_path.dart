@@ -2,7 +2,7 @@ abstract class ThingsboardImage {
   static final starSensorsWithTitle = 'assets/images/ss-black-logo.svg';
   static final starSensorsLogoTitleOnly = 'assets/images/ss-logo-title.svg';
   static final starSensorsLogoOnly = 'assets/images/ss-logo-only.svg';
-  static final thingsboard = 'assets/images/thingsboard.svg';
+  static final thingsboardXXX = 'assets/images/thingsboard.svg';
   static final thingsboardOuter = 'assets/images/thingsboard_outer.svg';
   static final thingsboardCenter = 'assets/images/thingsboard_center.svg';
   static final dashboardPlaceholder = 'assets/images/dashboard-placeholder.svg';
