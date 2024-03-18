@@ -60,15 +60,10 @@ ThemeData tbTheme = ThemeData(
     primaryTextTheme: tbTypography.black,
     typography: tbTypography,
     appBarTheme: AppBarTheme(
-        backgroundColor: Colors.white,
-        foregroundColor: Colors.white,
-        /* titleTextStyle: TextStyle(
-          color: _tbTextColor
-      ),
-      toolbarTextStyle: TextStyle(
-            color: _tbTextColor
-      ), */
-        iconTheme: IconThemeData(color: _tbTextColor)),
+      backgroundColor: Colors.white,
+      foregroundColor: Colors.white,
+      iconTheme: IconThemeData(color: _tbTextColor),
+    ),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
         backgroundColor: Colors.white,
         selectedItemColor: _ssPrimaryColor,

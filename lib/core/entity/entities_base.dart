@@ -390,13 +390,13 @@ class FirstPageExceptionIndicator extends StatelessWidget {
                   onPressed: onTryAgain,
                   icon: const Icon(
                     Icons.refresh,
-                    color: Colors.white,
+                    color: Colors.black,
                   ),
                   label: Text(
                     '${S.of(context).tryAgain}',
                     style: TextStyle(
                       fontSize: 16,
-                      color: Colors.white,
+                      color: Colors.black,
                     ),
                   ),
                 ),

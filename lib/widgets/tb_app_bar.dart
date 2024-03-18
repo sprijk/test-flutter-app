@@ -68,7 +68,8 @@ class _TbAppBarState extends TbContextState<TbAppBar> {
       title: widget.title,
       actions: widget.actions,
       elevation: widget.elevation ?? 8,
-      shadowColor: widget.shadowColor ?? Color(0xFFFFFFFF).withAlpha(150),
+      titleTextStyle: TextStyle(color: Color(0xFF282828), fontSize: 25),
+      // shadowColor: widget.shadowColor ?? Color(0xFFFFFFFF).withAlpha(150),
     );
   }
 }
