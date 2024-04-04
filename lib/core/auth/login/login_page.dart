@@ -72,20 +72,22 @@ class _LoginPageState extends TbPageState<LoginPage> {
                               Row(children: [
                                 SvgPicture.asset(
                                     ThingsboardImage.starSensorsWithTitle,
-                                    height: 25,
+                                    height: 75,
                                     colorFilter: ColorFilter.mode(
                                         Theme.of(context).primaryColor,
                                         BlendMode.srcIn),
                                     semanticsLabel:
                                         '${S.of(context).logoDefaultValue}')
                               ]),
-                              SizedBox(height: 32),
+                              SizedBox(height: 40),
                               Row(children: [
-                                Text('${S.of(context).loginNotification}',
-                                    style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 28,
-                                        height: 36 / 28))
+                                Text(
+                                  '${S.of(context).loginNotification}',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 25,
+                                      height: 36 / 28),
+                                )
                               ]),
                               SizedBox(height: 48),
                               if (tbContext.hasOAuthClients)
